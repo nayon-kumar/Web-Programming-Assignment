@@ -8,6 +8,7 @@
     background-color: #000000;
     position: fixed;
     width: 100%;
+    opacity: 0.8;
     grid-area: h;
 }
 .logo{
@@ -55,17 +56,91 @@ li a{
 .bannerArea{
     background: url(images/burger.jpg);
     margin-top: 100px;
-    height: 500px;
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     grid-area: b;
 }
-
-body{
+.bannerArea h1{
+    font-size: 50px;
+    line-height: 100px;
+}
+.bannerArea h3{
+    font-size: 30px;
+}
+.bannerArea h1, h3{
+    text-align: center;
+    color: white;
+}
+#hd{
+    margin-top: 100px;
+}
+.bannerArea img{
+    display: block;
+    width: 70px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.aboutUs{
+    grid-area: au;
+    margin-top: 20px;
+}
+.aboutUs h1{
+    color: #990018;
+    margin: 30px;
+    text-align: center;
+}
+.aboutUs p{
+    padding: 20px;
+    text-align: justify;
+}
+.aboutImg{
+    margin-top: 50px;
+    grid-area: ai;
+}
+.breakfast{
+    grid-area: bf;
+    height: 230px;
+    background: url(images/breakfast.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.lunch{
+    grid-area: l;
+    height: 230px;
+    background: url(images/lunch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dinner{
+    grid-area: d;
+    height: 250px;
+    background: url(images/dinner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.food{
+    display: grid;
+    grid-area: f;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+        'bf l d'
+    ;
+}
+.food div{
+    margin: 0px 5px;
+}
+.totalContainer{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-template-areas: 
         'h h h h'
         'b b b b'
+        'au au ai ai'
+        'f f f f'
     ;
 }
