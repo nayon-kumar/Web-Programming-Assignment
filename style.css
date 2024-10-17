@@ -144,11 +144,21 @@ li a{
     padding: 10px 40px;
     border-radius: 7px;
 }
+.foodHeader{
+    grid-area: fh;
+    text-align: center;
+}
+.foodHeader h1{
+    margin-bottom: 20px;
+    color: #990018;;
+}
 .food{
+    margin-top: 20px;
     display: grid;
     grid-area: f;
     grid-template-columns: auto auto auto;
     grid-template-areas: 
+        'fh fh fh'
         'bf l d'
     ;
 }
@@ -239,7 +249,7 @@ input[type="submit"]:hover{
     border-color: transparent;
 }
 .footer1{
-    margin-top: 30px;
+    margin-top: 10px;
     grid-area: f1;
     background-color: rgb(41, 41, 41);
     display: grid;
@@ -281,9 +291,9 @@ i:hover{
     grid-template-areas: 
         'h h h h'
         'b b b b'
-        'au au ai ai'
         'f f f f'
         'd d d d'
+        'au au ai ai'
         'f1 f1 f1 f1'
         'f2 f2 f2 f2'
     ;
