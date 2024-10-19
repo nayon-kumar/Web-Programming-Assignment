@@ -264,7 +264,8 @@ input[type="submit"]:hover{
     grid-area: rr;
 }
 .footer2{
-    grid-area: f2;background-color: black;
+    grid-area: f2;
+    background-color: black;
     color: white;
     height: 50px;
     display: grid;
